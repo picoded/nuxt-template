@@ -34,5 +34,11 @@ module.exports = {
     //     })
     //   }
     // }
-  }
+  },
+  /*
+  ** Plugin configuration
+  */
+  plugins : [
+    'plugins/element-ui.js'
+  ]
 }

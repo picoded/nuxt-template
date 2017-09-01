@@ -12,6 +12,12 @@
         <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
         <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
       </div>
+      <div class="sub-container">
+        <h2 class="subtitle">With Elements components</h2>
+        <a href="http://element.eleme.io/#/en-US/component/button" target="_blank">
+          <el-button type="primary">Elements UI page</el-button>
+        </a>
+      </div>
     </div>
   </section>
 </template>
@@ -33,6 +39,11 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.sub-container {
+  padding-top:50px;
+  width: 100%;
 }
 
 .title {
