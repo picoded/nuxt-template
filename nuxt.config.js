@@ -10,9 +10,22 @@ module.exports = {
       //{ hid: 'description', name: 'description', content: 'nuxt-project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' }
     ]
   },
+  css: [
+    'element-ui/lib/theme-default/index.css',
+    '~/assets/vuetify.styl',
+    '~/assets/default.css'
+  ],
+  /*
+  ** Plugin configuration
+  */
+  plugins : [
+    'plugins/element-ui.js',
+    'plugins/vuetify.js'
+  ],
   /*
   ** Customize the progress-bar color
   */
@@ -34,11 +47,5 @@ module.exports = {
     //     })
     //   }
     // }
-  },
-  /*
-  ** Plugin configuration
-  */
-  plugins : [
-    'plugins/element-ui.js'
-  ]
+  }
 }

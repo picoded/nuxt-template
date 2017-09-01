@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <logo/>
+      <nuxt-logo/>
       <h1 class="title">
         nuxt-template
       </h1>
@@ -15,19 +15,28 @@
       <div class="sub-container">
         <h2 class="subtitle">With Elements components</h2>
         <a href="http://element.eleme.io/#/en-US/component/button" target="_blank">
-          <el-button type="primary">Elements UI page</el-button>
+          <el-button type="primary">Elements UI Docs</el-button>
         </a>
+      </div>
+      <div class="sub-container">
+        <h2 class="subtitle">And Vuetify</h2>
+        <a href="https://vuetifyjs.com/components/buttons" target="_blank">
+          <v-btn primary dark>Vuetify Docs</v-btn>
+        </a>
+        <nuxt-link to="vuetify">
+          <v-btn primary dark>Vuetify Example Page</v-btn>
+        </nuxt-link>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import NuxtLogo from '~/components/NuxtLogo.vue'
 
 export default {
   components: {
-    Logo
+    NuxtLogo
   }
 }
 </script>

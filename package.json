@@ -13,8 +13,14 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "element-ui": "^1.4.3",
+    "node-sass": "^4.5.3",
     "nuxt": "^1.0.0-rc3",
-    "element-ui": "^1.4.3"
+    "sass": "^1.0.0-beta.2",
+    "sass-loader": "^6.0.6",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "vuetify": "^0.14.11"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
